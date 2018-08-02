@@ -107,7 +107,8 @@ async function faceDectect() {
     //  console.log(descriptor1);
      
      var best = getBestMatch(allClass, descriptor1);
-     iKnowYou.html("hello, " + best.personName);
+     	 var sayHello = 'hello ' + best.personName;
+     iKnowYou.html(sayHello);
    } 
 
      faceapi.drawDetection(imgEle, detectionsForSize, { withScore: true });
